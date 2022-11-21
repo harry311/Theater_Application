@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="41dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/lightGray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="Tue,26 Sep"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="1 Ticket = 150 /-"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="2 Tickets"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="15dp">
+
+                <RadioGroup
+                    android:id="@+id/times"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true" >
+
+                    <Button
+                        android:id="@+id/t1"
+                        android:layout_width="120sp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/masterYellow"
+                        android:text="07:30 PM"
+                        android:textColor="@color/gray" />
+
+                    <Button
+                        android:id="@+id/t2"
+                        android:layout_width="120sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10sp"
+                        android:backgroundTint="@color/masterYellow"
+                        android:text="10:30 PM"
+                        android:textColor="@color/gray" />
+
+                    <Button
+                        android:id="@+id/t3"
+                        android:layout_width="120sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10sp"
+                        android:backgroundTint="@color/masterYellow"
+                        android:text="02:30 PM"
+                        android:textColor="@color/gray" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="170dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="19sp"
+                android:layout_height="19sp"
+                android:layout_marginStart="20sp"
+                android:background="@drawable/sold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:text="sold"
+                android:textColor="@color/seat_color" />
+
+            <View
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginStart="30sp"
+                android:background="@drawable/available" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:text="Available"
+                android:textColor="@color/seat_color" />
+
+            <View
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/selected" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:text="Selected"
+                android:textColor="@color/seat_color"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/theater_screen" />
+
+
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="380dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/abcd"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="D"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="G"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp" />
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="30sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+                <CheckBox
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_marginStart="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="25dp"
+            android:layout_height="380dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/abcd"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="B"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="D"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="30sp"
+                android:gravity="center"
+                android:text="G"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/button"
+            android:onClick="next"
+            android:text="2 Ticket (Total 300 /-)"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="continue_wig">"Continue with Google "</string>
+    <string name="continue_wie">"Continue with Email "</string>
+    <string name="continue_wip">"Enter mobile number "</string>
+    <string name="continue_wia">"I agree to the <u>T &amp; C</u> and <u>Privacy Policy</u> "</string>
+    <string name="email_access">To access the  ticket(s) on other device, Login with this
+E-mail</string>
+    <string name="mobile_access">Your Number will only be used for sending ticket(s)</string>
+    <string name="tAndc"><u>Terms &amp; Conditions</u></string>
+</resources>
